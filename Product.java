@@ -66,3 +66,19 @@ class Clothing extends Product {
 				name ,price, quantity, getTotalPrice(), getDiscountedTotal());
 	}
 }
+class Grocery extends Product {
+	public Grocery(String name, double price, int quantity) {
+		super(name, price, quantity);
+	}
+	
+	@Override
+	public double getDiscountRate() {
+		return 0.0;
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("[Grocery] %s - %.2f TL x %d = %.2f TL (0%% off -> %.2f)",
+				name ,price, quantity, getTotalPrice(), getDiscountedTotal());
+	}
+}
