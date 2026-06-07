@@ -50,3 +50,19 @@ class Electronics extends Product {
 				name ,price, quantity, getTotalPrice(), getDiscountedTotal());
 	}
 }
+class Clothing extends Product {
+	public Clothing(String name, double price, int quantity) {
+		super(name, price, quantity);
+	}
+	
+	@Override
+	public double getDiscountRate() {
+		return 0.20;
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("[Clothing] %s - %.2f TL x %d = %.2f TL (20%% off -> %.2f)",
+				name ,price, quantity, getTotalPrice(), getDiscountedTotal());
+	}
+}
