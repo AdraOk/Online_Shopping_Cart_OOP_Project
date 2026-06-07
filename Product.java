@@ -32,3 +32,21 @@ abstract class Product {
 	}
 	
 }
+
+class Electronics extends Product {
+	
+	public Electronics(String name, double price, int quantity) {
+		super(name, price, quantity);
+	}
+
+	@Override
+	public double getDiscountRate() {
+		return 0.10;
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("[Electronics] %s - %.2f TL x %d = %.2f TL (10%% off -> %.2f)",
+				name ,price, quantity, getTotalPrice(), getDiscountedTotal());
+	}
+}
