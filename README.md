@@ -5,7 +5,7 @@ A project made for the EE1002 course at Marmara University
 Requires OpenJDK to be installed.
 
 ### Linux and UNIX
-Included `Makefile` should work with all POSIX-compatible operating systems. Requires openjdk to be installed.
+Included `Makefile` should work with all POSIX-compatible operating systems (**including MacOS X**)
 
 Output file is `build/shoppingcart.jar` by default. This can be overridden by setting the `OUTJAR` make variable, like `make OUTJAR=name.jar build`
 
