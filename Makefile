@@ -1,12 +1,12 @@
 .PHONY: build
 
 JAVAC = javac
-SRC := $(wildcard *.java)
+SRC := *.java
 BUILD_DIR = build
 OUTJAR = shoppingcart.jar
 
 build: build-class
-	jar cf $(BUILD_DIR)/$(OUTJAR) $(BUILD_DIR)/*.class
+	jar cfe $(BUILD_DIR)/$(OUTJAR) Main -C $(BUILD_DIR) .
 
 build-class: mkbuilddir
 	$(JAVAC) -d $(BUILD_DIR) $(SRC)
