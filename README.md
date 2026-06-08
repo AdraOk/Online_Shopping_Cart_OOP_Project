@@ -1,10 +1,10 @@
 # Online Shopping Cart
 A project made for the EE1002 course at Marmara University
 
-# Building and Running
+## Building and Running
 Requires OpenJDK to be installed.
 
-## Linux and UNIX
+### Linux and UNIX
 Included `Makefile` should work with all POSIX-compatible operating systems. Requires openjdk to be installed.
 
 Output file is `build/shoppingcart.jar` by default. This can be overridden by setting the `OUTJAR` make variable, like `make OUTJAR=name.jar build`
@@ -24,7 +24,7 @@ Cleanup before action
 make clean <build|run>
 ```
 
-## Manual build for non-POSIX systems (incl. Windows)
+### Manual build for non-POSIX systems (incl. Windows)
 
 1. Create a directory named `build`
 2. Build the .class files using the Java Compiler
