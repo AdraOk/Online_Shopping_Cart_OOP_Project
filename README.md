@@ -1,5 +1,5 @@
 # Online Shopping Cart
-A project made for the EE1002 course at Marmara University
+A project made for the EE1004 course at Marmara University
 
 ## Building and Running
 Requires OpenJDK to be installed.
