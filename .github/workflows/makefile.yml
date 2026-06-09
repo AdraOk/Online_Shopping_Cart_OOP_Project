@@ -1,0 +1,36 @@
+name: Java Makefile
+
+on: 
+  push:
+    tags:
+    - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - name: Build project
+        run: make build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: shoppingcart-jar
+          path: build/shoppingcart.jar
+
+      - name: Do release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "build/shoppingcart.jar"
+          allowUpdates: true
+          artifactErrorsFailBuild: true
