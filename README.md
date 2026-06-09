@@ -1,7 +1,12 @@
 # Online Shopping Cart
 A project made for the EE1004 course at Marmara University
 
-## Building and Running
+## Prebuilt Releases
+Releases built by Github Actions can be obtained from the [releases](https://github.com/AdraOk/Online_Shopping_Cart_OOP_Project/releases) section of this repository.
+
+These binaries are built fully automatically with no human intervention whatsoever, and can be trusted.
+
+## Building Locally
 Requires OpenJDK to be installed.
 
 ### Linux and UNIX
